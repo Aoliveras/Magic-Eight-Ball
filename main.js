@@ -23,7 +23,7 @@ function main() {
 
     function resetBubble() {
         ansBubble.innerText = "";
-        questionEnter.placeholder = "";
+        questionEnter.value = "";
     }
 
 
