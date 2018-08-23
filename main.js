@@ -15,8 +15,8 @@ function main() {
     let eightReset = document.querySelector('.container').addEventListener('click', resetBubble);
 
     function answerMe() {
-        let randoNum = Math.floor(Math.random() * 3);
         let ansArr = ["yessir", "no way!", "maybe..."];
+        let randoNum = Math.floor(Math.random() * ansArr.length);
         ansBubble.innerText = ansArr[randoNum];
         console.log(randoNum);
     };
