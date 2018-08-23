@@ -6,18 +6,25 @@ console.log('JS Loaded!');
 function main() {
 
 
-    let questionEnter = document.querySelector('input');
+    
     //console.log(questionEnter);
-    let randoNum = Math.floor(Math.random() * 3);
+    let questionEnter = document.querySelector('input');
     //console.log(randoNum);
     let ansBubble = document.querySelector('.answer');
     //console.log(ansBubble);
+    let eightReset = document.querySelector('.container').addEventListener('click', resetBubble);
 
     function answerMe() {
+        let randoNum = Math.floor(Math.random() * 3);
         let ansArr = ["yessir", "no way!", "maybe..."];
         ansBubble.innerText = ansArr[randoNum];
-        setTimeout(,5000);
+        console.log(randoNum);
     };
+
+    function resetBubble() {
+        ansBubble.innerText = "";
+        questionEnter.placeholder = "";
+    }
 
 
     questionEnter.addEventListener('keypress', function(e) {
