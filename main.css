@@ -44,6 +44,7 @@ form {
 
 .answer {
     font-family: 'Indie Flower', cursive;
+    font-size: 25px;
     color: white;
     line-height: 100px;
     margin:  0 auto;
@@ -51,7 +52,6 @@ form {
     width: 100px;
     background-color: darkblue;
     border-radius: 50px;
-    font-size: 18px;
     font-weight: bold;
     border: 2px solid gray;
 }
