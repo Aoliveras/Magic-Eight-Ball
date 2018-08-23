@@ -32,12 +32,13 @@ form {
 }
 
 .answer {
+    color: white;
     margin:  0 auto;
     height: 100px;
     width: 100px;
     background-color: darkblue;
     border-radius: 50px;
-    font-size: 75px;
+    font-size: 18px;
     font-weight: bold;
     line-height: 150px;
     border: 2px solid gray;

@@ -9,21 +9,23 @@ function main() {
     let questionEnter = document.querySelector('input');
     //console.log(questionEnter);
     let randoNum = Math.floor(Math.random() * 3);
-    console.log(randoNum);
-
+    //console.log(randoNum);
+    let ansBubble = document.querySelector('.answer');
+    //console.log(ansBubble);
 
     function answerMe() {
         let ansArr = ["yessir", "no way!", "maybe..."];
-        console.log(ansArr[randoNum]);
-        
+        ansBubble.innerText = ansArr[randoNum];
+        setTimeout(,5000);
+    };
 
-    }
 
-
-    questionEnter.addEventListener('keyup', function(e) {
-        if (e.which === 13) {
+    questionEnter.addEventListener('keypress', function(e) {
+        console.log("something");
+        if (e.keyCode === 13) {
+            e.preventDefault();
             answerMe();
-        }
+        };
     });
     
 
